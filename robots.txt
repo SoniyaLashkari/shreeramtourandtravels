@@ -1,3 +1,17 @@
+# Block all web crawlers from accessing specific directories
 User-agent: *
 Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Allow all web crawlers to access everything else
+User-agent: *
 Allow: /
+
+# Specific rules for Googlebot (Google's web crawler)
+User-agent: Googlebot
+Disallow: /no-google/
+
+# Link to the sitemap to help crawlers find all pages
+Sitemap: https://www.shreeramtourandtravel.in/sitemap.xml
