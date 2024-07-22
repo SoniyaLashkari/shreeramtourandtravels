@@ -4,7 +4,7 @@
     <!-- Home Page -->
     <url>
         <loc>https://www.shreeramtourandtravel.in/</loc>
-        <lastmod>2024-07-17</lastmod>
+        <lastmod>2024-07-22</lastmod> <!-- Updated date -->
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -48,6 +48,8 @@
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
+
+    <!-- Pricing Page -->
     <url>
         <loc>https://www.shreeramtourandtravel.in/pricing.html</loc>
         <lastmod>2024-07-17</lastmod>
@@ -55,6 +57,7 @@
         <priority>1.0</priority>
     </url>
 
+    <!-- Car Single Page -->
     <url>
         <loc>https://www.shreeramtourandtravel.in/car-single.html</loc>
         <lastmod>2024-07-18</lastmod>
@@ -62,6 +65,7 @@
         <priority>0.9</priority>
     </url>
 
+    <!-- Blog Single Page -->
     <url>
         <loc>https://www.shreeramtourandtravel.in/blog-single.html</loc>
         <lastmod>2024-07-18</lastmod>
