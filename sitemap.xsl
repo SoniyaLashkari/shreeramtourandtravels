@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:output method="html" indent="yes"/>
+
     <xsl:template match="/">
         <html>
             <head>
@@ -16,16 +18,18 @@
             <body>
                 <h1>XML Sitemap</h1>
                 <ul>
-                    <xsl:for-each select="urlset/url">
-                        <li>
-                            <a href="{loc}">
-                                <xsl:value-of select="loc"/>
-                            </a>
-                            (Last Updated: <xsl:value-of select="lastmod"/>)
-                        </li>
-                    </xsl:for-each>
+                    <xsl:apply-templates select="urlset/url"/>
                 </ul>
             </body>
         </html>
+    </xsl:template>
+
+    <xsl:template match="url">
+        <li>
+            <a href="{loc}">
+                <xsl:value-of select="loc"/>
+            </a>
+            (Last Updated: <xsl:value-of select="lastmod"/>)
+        </li>
     </xsl:template>
 </xsl:stylesheet>
